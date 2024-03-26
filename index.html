@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pokemon Search App</title>
+    <link rel="styles" href="styles.css">
+  </head>
+  <body>
+
+    <div class="pokedex">
+      <div class="search-area">
+        <label for="search-input">Search For Pokemon Name or ID:</label>
+        <div class="same-line">
+          <input id="search-input" required>
+          <button id="search-button">Search</button>
+        </div>
+        
+      </div>
+
+      <div class="picture">
+        <div class="identity">
+          <h3 id="pokemon-name">NAME</h3>
+          <h3 id="pokemon-id">ID</h3>
+        </div>
+        <div class="physical-traits">
+          <p id="weight">WEIGHT</p>
+          <p id="height">HEIGHT</p>
+        </div>
+        <div id="image-holder">
+          <img id="sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png">
+        </div>
+
+        <div id="types">
+          <p class="type">Electric</p>
+          <p class="type">Ground</p>
+        </div>
+        
+      </div>
+
+      <div class="stats">
+        <div class="container">
+          <p class="text">Base</p><p class="stat">STATS</p>
+        </div>
+        <div class="container">
+          <p class="text">HP:</p><p class="stat" id="hp">0</p>
+        </div>
+        <div class="container">
+          <p class="text">Attack:</p><p class="stat" id="attack">0</p>
+        </div>
+        <div class="container">
+          <p class="text">Defense:</p><p class="stat" id="defense">0</p>
+        </div>
+        <div class="container">
+          <p class="text">Sp. Attack:</p><p class="stat" id="special-attack">0</p>
+        </div>
+        <div class="container">
+          <p class="text">Sp. Defense:</p><p class="stat" id="special-defense">0</p>
+        </div>
+        <div class="container">
+          <p class="text">Speed:</p><p class="stat" id="speed">0</p>
+        </div>
+
+        
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
